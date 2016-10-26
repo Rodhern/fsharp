@@ -1,4 +1,5 @@
 ﻿// Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information.
+// This prominent notice indicates, as per the license conditions, that this file was modified by Robert Nielsen. See License.txt in the project root for license information.
 
 // Reflection on F# values. Analyze an object to see if it the representation
 // of an F# value.
@@ -769,7 +770,7 @@ type FSharpType =
         Impl.checkNonNull "types" types
 
         // No assembly passed therefore just get framework local version of Tuple
-        let asm = typeof<System.Tuple>.Assembly
+        let asm = typeof<System.Tuple<_>>.Assembly // added tuple parameter wildcard in 4.0.1.15-FSharpCore35
         if types |> Array.exists (function null -> true | _ -> false) then 
             invalidArg "types" (SR.GetString(SR.nullsNotAllowedInArray))
         Impl.mkTupleType false asm types

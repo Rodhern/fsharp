@@ -1,3 +1,12 @@
+4.0.1.15-FSharpCore35
+  This prominent notice indicates, as per the license conditions, that this file was modified by Robert Nielsen. See License.txt in the project root for license information.
+  * Temporary update to 'CHANGELOG-fsharp.md'.
+  * Added '.nuget/packages.config'.
+  * Removed 'Linq' reference from 'prim-types.fs'.
+  * Added explicit type parameter wildcard to 'reflect.fs'.
+  * Set target framework to .NET Framework 3.5 (for 'net20' profile).
+  * Referenced 'System.Core' in net20 profile.
+
 4.0.1.15
   * Fix null condition in Fsc task
 

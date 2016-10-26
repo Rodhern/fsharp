@@ -1,4 +1,5 @@
 // Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information.
+// This prominent notice indicates, as per the license conditions, that this file was modified by Robert Nielsen. See License.txt in the project root for license information.
 
 #nowarn "25" // Incomplete match expressions 
 #nowarn "35" // This construct is deprecated: the treatment of this operator is now handled directly by the F# compiler and its meaning may not be redefined.
@@ -646,7 +647,7 @@ namespace Microsoft.FSharp.Core
     open System.Collections.Generic
     open System.Diagnostics
     open System.Globalization
-    open System.Linq
+    // open System.Linq // removed in 4.0.1.15-FSharpCore35
     open System.Text
     open Microsoft.FSharp.Core
     open Microsoft.FSharp.Core.BasicInlinedOperations
